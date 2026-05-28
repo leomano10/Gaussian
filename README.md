@@ -1,7 +1,7 @@
 # Gaussian Elimination
 
 ## AIM:
-```
+
 To write a program to find the solution of a matrix using Gaussian Elimination.
 
 ## Equipments Required:
@@ -16,6 +16,7 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 
 
 ## Program:
+```
 import numpy as np
 import sys
 
