@@ -15,28 +15,26 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 
 
 ## Program:
-```
-/*
-Program to find the solution of a matrix using Gaussian Elimination.
+'''Program to solve a matrix using Gaussian elimination without partial pivoting.
 Developed by: manorajapriyan.l.e
 RegisterNumber: 212225040227
-import numpy as np
-import sys
-
+'''
 n = int(input())
 
-a = np.zeros((n, n + 1))
-x = np.zeros(n)
+a = []
 
 for i in range(n):
+    row = []
     for j in range(n + 1):
-        a[i][j] = float(input())
+        row.append(float(input()))
+    a.append(row)
+
+x = [0 for i in range(n)]
 
 for i in range(n):
-    if a[i][i] == 0.0:
-        sys.exit("Divide by zero detected!")
 
     for j in range(i + 1, n):
+
         ratio = a[j][i] / a[i][i]
 
         for k in range(n + 1):
@@ -45,6 +43,7 @@ for i in range(n):
 x[n - 1] = a[n - 1][n] / a[n - 1][n - 1]
 
 for i in range(n - 2, -1, -1):
+
     x[i] = a[i][n]
 
     for j in range(i + 1, n):
@@ -53,12 +52,10 @@ for i in range(n - 2, -1, -1):
     x[i] = x[i] / a[i][i]
 
 for i in range(n):
-    print("X%d = %0.2f" % (i, x[i]))
-*/
-```
+    print("X{} = {:.2f}".format(i, x[i]), end=" ")
 
 ## Output:
-![gaussian elimination]()
+
 
 
 ## Result:
