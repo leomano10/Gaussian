@@ -9,7 +9,7 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. Import the required packages.
+1.Import the required packages.
 2.Read the augmented matrix values.
 3.Apply Gaussian Elimination to convert the matrix into upper triangular form.
 4.Perform back substitution and print the solution.
@@ -53,6 +53,7 @@ for i in range(n):
     print("X%d = %0.2f" % (i, x[i]))
 ```
 ## Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1efebeb3-77c6-4e96-b46b-e3972c1ec365" />
 
 
 
